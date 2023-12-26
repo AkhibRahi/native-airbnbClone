@@ -40,12 +40,14 @@ const styles = StyleSheet.create({
         borderRadius: 50,
         justifyContent: 'center',
         paddingHorizontal: '8%',
-        flexDirection: 'row'
+        flexDirection: 'row',
+        cursor: 'pointer'
     },
     searchText: {
         fontSize: 16,
         color: '#000',
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        cursor: 'pointer'
 
        
     }

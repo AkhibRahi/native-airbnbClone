@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     borderBottomWidth: 1,
-    borderBottomColor: 'lightgrey'
+    borderBottomColor: 'lightgrey',
   },
   guestTitleContainer: {
     alignContent: 'center',
@@ -29,17 +29,16 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     borderBottomWidth: 1,
     borderBottomColor: 'lightgrey',
-
   },
-  categoryAdults:{
+  categoryAdults: {
     fontWeight: 'bold',
-    color: '#000'
+    color: '#000',
   },
-  counts:{
+  counts: {
     flexDirection: 'row',
-    alignItems: 'center'
+    alignItems: 'center',
   },
-  countButton:{
+  countButton: {
     width: 30,
     height: 30,
     borderRadius: 15,
@@ -48,12 +47,26 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    color:'#000'
+    color: '#000',
   },
-  number:{
+  number: {
     marginHorizontal: 20,
     fontSize: 18,
-    color: '#000'
-  }
+    color: '#000',
+  },
+  searchButton: {
+    marginHorizontal: 15,
+    marginBottom: 15,
+    backgroundColor: '#000',
+    height: 50,
+    borderRadius: 10,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  searchText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
 });
 export default styles;

@@ -8,6 +8,7 @@ import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import Feather from 'react-native-vector-icons/Feather';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import { createStackNavigator } from '@react-navigation/stack';
+import ExploreNavigator from './ExploreNavigator';
 
 export default function HomeTabNavigator() {
 
@@ -21,7 +22,7 @@ export default function HomeTabNavigator() {
     >
        <Tab.Screen
         name={'Explore'}
-        component={HomeScreen}
+        component={ExploreNavigator}
         options={{
           tabBarIcon: ({color}) => (
             <Fontisto name="search" size={25} color={color} />

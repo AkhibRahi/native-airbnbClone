@@ -6,6 +6,7 @@ import SearchScreen from '../screens/search/searchScreen';
 import HomeScreen from '../screens/home';
 import HomeTabNavigator from './HomeTabNavigator';
 import ScreenLocation from '../screens/location/ScreenLocation';
+import Guest from '../screens/guest/Guest';
 
 export default function Router() {
   const Stack = createStackNavigator();
@@ -23,6 +24,13 @@ export default function Router() {
           component={ScreenLocation}
           options={{
             title: "Search your destination"
+          }}
+        />
+        <Stack.Screen
+          name={'guests'}
+          component={Guest}
+          options={{
+            title: 'How Many People'
           }}
         />
       </Stack.Navigator>
