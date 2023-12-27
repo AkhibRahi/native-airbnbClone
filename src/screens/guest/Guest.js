@@ -1,7 +1,7 @@
 import {View, Text, Pressable} from 'react-native';
 import React, {useState} from 'react';
 import styles from './style';
-import Fontisto from 'react-native-vector-icons/Fontisto';
+
 import { useNavigation } from '@react-navigation/native';
 
 export default function Guest() {
@@ -81,7 +81,14 @@ export default function Guest() {
         </View>
       </View>
 
-      <Pressable onPress={()=> navigation.navigate('searchScreen') } style={styles.searchButton}>
+      <Pressable onPress={() =>
+          navigation.navigate('Home', {
+            screen: 'Explore',
+            params: {
+              screen: 'searchResults',
+            },
+          })
+        } style={styles.searchButton}>
         <Text style={styles.searchText}>
           Search
         </Text>
